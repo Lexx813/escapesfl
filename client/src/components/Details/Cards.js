@@ -1,7 +1,8 @@
 import React from "react";
 
 import cardpic1 from "../../images/servicecards/backyards2.jpg";
-import cardpic2 from "../../images/servicecards/fireplace.jpg";
+import cardpic2 from "../../images/servicecards/fireplace.png";
+import cardpic5 from "../../images/servicecards/pergola.png";
 import cardpic3 from "../../images/servicecards/Kitchens.jpg";
 import cardpic4 from "../../images/servicecards/pools.jpg";
 
@@ -61,8 +62,8 @@ const Cards = () => {
           </div>
         </div>
         <div className="col-sm">
-          <div className="card ">
-            <img className="card-img-top img_size " src={cardpic4} alt="" />
+          <div className="card " >
+            <img className="card-img-top img_size " src={cardpic5} alt="" />
             <div className="card-body">
               <h4 className="card-title">Pergola</h4>
               <p className="card-text">
