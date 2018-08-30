@@ -1,0 +1,38 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.0.0",
+    "@material-ui/icons": "^3.0.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "node-sass-chokidar": "^1.3.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-image-gallery": "^0.8.10",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "1.1.5",
+    "react-scroll": "^1.7.10",
+    "react-slick": "^0.23.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar src/styles/scss -o src/styles/css",
+    "sass": "npm run build-css && node-sass-chokidar src/styles/scss -o src/styles/css --watch --recursive --usePolling --polling-interval 500"
+  },
+  "proxy": {
+    "/api/*": {
+      "target": "http://localhost:3002"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.footer {
+	font-size: 1.4rem;
+	display: flex;
+	width: 100%;
+	height: 11rem;
+	background: $primary-color;
+	;
+	color: #fff;
+
+	&__wrapper {
+		padding: 2rem;
+		display: flex;
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		padding: 1rem;
+		display: flex;
+	}
+
+	&__item i {
+		padding-top: 4px;
+	}
+
+	&__item a {
+		color: #fff;
+		padding-left: 10px;
+	}
+
+	&__item p {
+		align-items: center;
+		padding-left: 10px;
+		margin-bottom: 0px;
+	}
+
+	&__dev {
+		align-self: flex-end;
+		padding-top: 5rem;
+		padding-left: 20rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.footer {
+		display: flex;
+		height: 30rem;
+		justify-items: center;
+		align-items: center;
+		align-self: auto;
+		text-align: center;
+
+		&__dev {
+			align-self: flex-end;
+			padding-top: 5rem;
+			align-content: center;
+			align-items: center;
+		}
+	}
+}

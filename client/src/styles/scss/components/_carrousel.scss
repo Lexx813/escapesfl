@@ -1,0 +1,70 @@
+.carrousel_wrapper {
+    height: 700px;
+    overflow: hidden;
+}
+
+.carrousel_image {
+    background-size: cover !important;
+}
+
+.artist_name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.artist_name .wrapper {
+    margin: 6px;
+    text-align: center;
+    color: $primary-color;
+    animation: pulse 3s 2s infinite;
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 2px rgb(20, 19, 19);
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    font-family: "Lobster";
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 400px) {
+    .artist_name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 288px;
+        height: 167px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .artist_name .wrapper {
+        height: 151px;
+        margin: 6px;
+        text-align: center;
+        color: $primary-color;
+        font-size: 3.5rem;
+        padding: 21px 70px 0px 70px;
+        text-transform: uppercase;
+        font-family: "Lobster";
+        font-weight: 500;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    15% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

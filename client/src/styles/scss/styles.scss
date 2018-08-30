@@ -1,0 +1,107 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+// BASE
+@import "./base/base.scss";
+// COMPONENTS
+@import "./components/carrousel.scss";
+@import "./components/cards.scss";
+// layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+#home-heading {
+    font-size: 2rem;
+    position: relative;
+    min-height: 250px;
+    width: auto;
+    background: url("../../images/paralax/paralax.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: $primary-color;
+    text-shadow: 1px 1px 2px rgb(20, 19, 19);
+}
+
+.home-heading-title {
+    font-size: 5rem;
+}
+
+.about-c {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.about {
+    background: rgb(195, 191, 195);
+    color: $primary-color;
+    font-size: 1.5rem;
+
+    &__text-title {
+        font-size: 8rem;
+        text-shadow: 0px 1px 1px rgb(20, 19, 19);
+        color: $primary-color-light;
+    }
+}
+
+.card-title {
+    font-size: 3.4rem;
+    color: $primary-color;
+}
+
+.card-text {
+    font-size: 1.5rem;
+    color: $primary-color-light;
+}
+
+.cards {
+    &__title {
+        text-align: center;
+        font-size: 7rem;
+        color: $primary-color;
+    }
+}
+
+.gallery-title {
+    font-size: 6rem;
+    color: $primary-color;
+}
+
+.contact {
+    font-size: 1.7rem;
+    color: $primary-color;
+
+    &__title {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+    }
+}
+
+.contact p {
+    color: $primary-color-light;
+}
+
+#home-icons {
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+@media only screen and (max-width: 780px) {
+    #home-icons {
+        height: 45rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #home-icons {
+        height: 57rem;
+    }
+}
