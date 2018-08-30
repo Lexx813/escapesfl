@@ -22,10 +22,11 @@ $font-primary:"Roboto";
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    background-color: rgb(206, 203, 203)
 }
 
 body {
-    font-family: $font-primary;
+    background-color: rgb(206, 203, 203) font-family: $font-primary;
     color: $primary-color;
     font-weight: 300;
     line-height: 1.6;
