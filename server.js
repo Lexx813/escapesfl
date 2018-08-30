@@ -64,7 +64,7 @@ app.post('/api/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'alexx813@gmail.com', //Change to email address that you want to receive messages on
+    to: 'office@escapesfl.com', //Change to email address that you want to receive messages on
     subject: 'New Message from Contact Form',
     text: content
   }
