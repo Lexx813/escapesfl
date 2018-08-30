@@ -26,7 +26,7 @@ const Carrousel = () => {
           <div
             className="carrousel_image"
             style={{
-              background: `url(${slide_one})`,
+              background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url(${slide_one})`,
               height: `${window.innerHeight}px`
             }}
           />
@@ -35,7 +35,7 @@ const Carrousel = () => {
           <div
             className="carrousel_image"
             style={{
-              background: `url(${slide_two})`,
+              background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),url(${slide_two})`,
               height: `${window.innerHeight}px`
             }}
           />
@@ -44,7 +44,7 @@ const Carrousel = () => {
           <div
             className="carrousel_image"
             style={{
-              background: `url(${slide_three})`,
+              background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url(${slide_three})`,
               height: `${window.innerHeight}px`
             }}
           />
