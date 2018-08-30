@@ -357,6 +357,7 @@ html {
   background-color: #cecbcb; }
 
 body {
+  background-color: #cecbcb;
   font-family: "Roboto";
   color: #5ac948;
   font-weight: 300;
@@ -394,7 +395,7 @@ body {
   z-index: 10;
   letter-spacing: 0.05em;
   text-shadow: 1px 1px 2px #141313;
-  font-size: 7.5rem;
+  font-size: 7.0rem;
   font-family: "Lobster";
   font-weight: 300; }
 
