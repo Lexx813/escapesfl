@@ -49,7 +49,7 @@ class Header extends Component {
       >
         <Toolbar>
           <div className="header_logo">
-             <img style={{width:"150px", height:"auto"}} src={Logo} alt="logo"/>
+             <img style={{width:"252px", height:"auto"}} src={Logo} alt="logo"/>
 
           </div>
 
