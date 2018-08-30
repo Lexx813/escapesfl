@@ -39,7 +39,7 @@ class ContactForm extends Component {
   render() {
     const alert = this.state.alert;
     return (
-      <div id="contact" className="contact py-2 ">
+      <div id="contact" className="contact py-5 ">
         <div className="container ">
           <div className="row ">
             <div className="col-lg-12 ">

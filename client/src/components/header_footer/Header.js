@@ -44,12 +44,13 @@ class Header extends Component {
         style={{
           backgroundColor: this.state.headerShow ? "#fff" : "transparent",
           boxShadow: this.state.headerShow ? "" : "none",
-          padding: "6px 0px"
+          height:"135px",
+          padding: "2px 0px"
         }}
       >
         <Toolbar>
           <div className="header_logo">
-             <img style={{width:"252px", height:"auto"}} src={Logo} alt="logo"/>
+             <img style={{width:"350px", height:"auto"}} src={Logo} alt="logo"/>
 
           </div>
 

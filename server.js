@@ -75,6 +75,6 @@ app.post('/api/send', (req, res, next) => {
 
 //SERVER SETUP//
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT ||  3002;
 app.listen(PORT);
 console.log(`SERVER STARTED AT PORT ${PORT}`);

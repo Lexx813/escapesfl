@@ -48,6 +48,7 @@ const SideDrawer = props => {
     >
       <List
         style={{
+          fontSize: 16,
           width: 210,
           fontWeight: 500,
           marginLeft: 4
