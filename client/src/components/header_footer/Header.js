@@ -7,6 +7,8 @@ import IconButton from "@material-ui/core/IconButton";
 
 import SideDrawer from "./SideDrawer";
 
+import Logo from "../../images/logo/logo.png";
+
 class Header extends Component {
   state = {
     drawerOpen: false,
@@ -47,15 +49,15 @@ class Header extends Component {
       >
         <Toolbar>
           <div className="header_logo">
-            <div className="font_lobster header_logo_venue"> Escapes </div>
-            <div className="header_logo_title">Outdoor Living</div>
+             <img style={{width:"150px", height:"auto"}} src={Logo} alt="logo"/>
+
           </div>
 
           <IconButton aria-label="Menu" onClick={() => this.toggleDrawer(true)}>
             <MenuIcon
               style={{
                 fontSize: "30px",
-                color: "#436e4f"
+                color: "#219442"
               }}
             />
           </IconButton>

@@ -24,7 +24,6 @@ const LandingPage = () => {
       <Element name="gallery">
         <Gallery />
       </Element>
-
       <Location />
       <Element name="contact">
         <ContactForm />

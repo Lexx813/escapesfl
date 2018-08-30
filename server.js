@@ -6,10 +6,6 @@ require("dotenv").config();
 const app = express();
 
 
-
-
-
-// Body Parser Middleware
 app.use(bodyParser.urlencoded({
   extended: false
 }));
@@ -29,13 +25,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-
-
-
-
-
-
-
+// Node Mailer
 
 var transport = {
   host: 'smtp.gmail.com',
@@ -64,7 +54,7 @@ app.post('/api/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: 'office@escapesfl.com', //Change to email address that you want to receive messages on
+    to: 'office@escapesfl.com', // Change to email address that you want to receive messages on
     subject: 'New Message from Contact Form',
     text: content
   }
