@@ -16,7 +16,7 @@ const Cards = () => {
             <div className="card-body">
               <h4 className="card-title">Landscapes</h4>
               <p className="card-text">
-                when you come home from a days hard work, or something feel
+                When you come home from a days hard work, or something feel
                 proud and invite your family and friends to Escape along with
                 you.
               </p>
@@ -53,7 +53,7 @@ const Cards = () => {
           <div className="card ">
             <img className="card-img-top img_size " src={cardpic4} alt="" />
             <div className="card-body">
-              <h4 className="card-title">Poolarea</h4>
+              <h4 className="card-title">Pool area</h4>
               <p className="card-text">
                 Customize, design and pave your pool area to be an Escape you
                 deserve, Just imagine paradise in you backyard.

@@ -437,6 +437,9 @@ body {
 .card-title {
   font-size: 2.2rem; }
 
+.form-control {
+  border: 1px solid #5ac948; }
+
 header {
   font-size: 20px;
   padding: 10px 0px;
