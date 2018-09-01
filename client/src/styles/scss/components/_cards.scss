@@ -3,12 +3,19 @@
     height: 175px;
 }
 
+.cards {
+    &__title {
+        font-weight: 100;
+    }
+}
+
 .card {
     text-align: center;
     border: none;
 }
 
 .card-title {
+    font-weight: 100;
     font-size: 2.2rem;
 }
 

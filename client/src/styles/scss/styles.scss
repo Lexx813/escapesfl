@@ -40,6 +40,7 @@
     font-size: 1.5rem;
 
     &__text-title {
+        font-weight: 100;
         font-size: 8rem;
         color: $primary-color-light;
     }
@@ -64,21 +65,25 @@
 }
 
 .gallery-title {
+    font-weight: 100;
     font-size: 6rem;
     color: $primary-color;
 }
 
 .contact {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: $primary-color;
     padding-bottom: 10rem;
     background: rgb(228, 225, 228);
+    font-weight: 100;
 
     &__title {
+        font-weight: 100;
         font-size: 5rem;
     }
 
     &__text {
+        font-weight: 100;
         font-size: 1.4rem;
     }
 }
