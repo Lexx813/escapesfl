@@ -8,10 +8,10 @@ import cardpic4 from "../../images/servicecards/pools.jpg";
 
 const Cards = () => {
   return (
-    <div className="cards__wrapper container-fluid bg-light py-5">
+    <div className="cards__wrapper container-fluid  ">
       <div className="row">
         <div className="col-sm  ">
-          <div className="card">
+          <div className="">
             <img className="card-img-top img_size " src={cardpic1} alt="" />
             <div className="card-body">
               <h4 className="card-title">Landscapes</h4>
@@ -24,12 +24,12 @@ const Cards = () => {
           </div>
         </div>
         <div className="col-sm">
-          <div className="card ">
+          <div className=" ">
             <img className="card-img-top img_size  " src={cardpic2} alt="" />
             <div className="card-body">
-              <h4 className="card-title">Fireplace</h4>
+              <h4 className="card-title">Firepits</h4>
               <p className="card-text">
-                Cold day ? No need to go camping to spark up a fire Escape right
+                Cold day? No need to go camping to spark up a fire Escape right
                 in your home lets get those marshmallows burning right out in
                 your backyard.
               </p>
@@ -37,7 +37,7 @@ const Cards = () => {
           </div>
         </div>
         <div className="col-sm">
-          <div className="card ">
+          <div className="">
             <img className="card-img-top img_size " src={cardpic3} alt="" />
             <div className="card-body">
               <h4 className="card-title">Outdor Kitchen</h4>
@@ -50,7 +50,7 @@ const Cards = () => {
           </div>
         </div>
         <div className="col-sm">
-          <div className="card ">
+          <div className=" ">
             <img className="card-img-top img_size " src={cardpic4} alt="" />
             <div className="card-body">
               <h4 className="card-title">Pool area</h4>
@@ -62,7 +62,7 @@ const Cards = () => {
           </div>
         </div>
         <div className="col-sm">
-          <div className="card " >
+          <div className=" " >
             <img className="card-img-top img_size " src={cardpic5} alt="" />
             <div className="card-body">
               <h4 className="card-title">Pergola</h4>

@@ -6,6 +6,7 @@
 .cards {
     &__title {
         font-weight: 100;
+        text-align: center;
     }
 }
 
@@ -17,6 +18,10 @@
 .card-title {
     font-weight: 100;
     font-size: 2.2rem;
+}
+
+.card-text {
+    font-weight: 300;
 }
 
 .form-control {

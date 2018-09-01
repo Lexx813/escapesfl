@@ -15,8 +15,18 @@ const Footer = () => {
               Home Advisor
             </a>
           </li>
+          <li className="footer__item">
+           <i class="fab fa-houzz"></i>
+            <a href="https://www.houzz.es/pro/escapesoutdoorliving/escapes-outdoor-living?irs=US">
+              Houzz
+            </a>
+          </li>
         </ul>
         <ul>
+          <li className="footer__item">
+           <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/escapesfl/">Instagram</a>
+          </li>
           <li className="footer__item">
             <i class="far fa-envelope"> </i>
             <p> Office@escapesfl.com </p>

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import slide_one from "../../images/carrousel/slide_one.jpg";
 import slide_two from "../../images/carrousel/slide_two.jpg";
-import slide_three from "../../images/carrousel/slide_three.jpg";
+import slide_three from "../../images/carrousel/slide_three.png";
 
 const Carrousel = () => {
   const settings = {

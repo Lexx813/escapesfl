@@ -5,8 +5,8 @@ import ImageGallery from "react-image-gallery";
 import pic1 from "../../images/gallery/gallery_1.jpg";
 import pic1sm from "../../images/gallery/thumbnails/gallery_1_TN.jpg";
 
-import pic2 from "../../images/gallery/gallery_2.jpg";
-import pic2sm from "../../images/gallery/thumbnails/gallery_2_TN.jpg";
+import pic2 from "../../images/gallery/gallery_2.png";
+import pic2sm from "../../images/gallery/thumbnails/gallery_2_TN.png";
 
 import pic3 from "../../images/gallery/gallery_3.jpg";
 import pic3sm from "../../images/gallery/thumbnails/gallery_3_TN.jpg";

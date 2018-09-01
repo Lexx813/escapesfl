@@ -380,6 +380,7 @@ body {
   background-size: cover !important; }
 
 .artist_name {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -394,29 +395,43 @@ body {
   position: relative;
   z-index: 10;
   letter-spacing: 0.05em;
-  text-shadow: 1px 1px 2px #141313;
-  font-size: 7.0rem;
+  text-shadow: 0.3px 0.3px 0px #f1eaea;
+  font-size: 7rem;
   font-family: 'Lobster Two', cursive;
   font-weight: 100; }
 
-@media only screen and (max-width: 400px) {
-  .artist_name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 288px;
-    height: 167px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+@media only screen and (max-width: 1259px) {
   .artist_name .wrapper {
-    height: 151px;
-    margin: 6px;
-    text-align: center;
-    color: #5ac948;
-    font-size: 3.5rem;
-    padding: 21px 70px 0px 70px;
-    font-family: "Lobster";
-    font-weight: 500; } }
+    font-size: 6rem; } }
+
+@media only screen and (max-width: 1083px) {
+  .artist_name .wrapper {
+    font-size: 5rem; } }
+
+@media only screen and (max-width: 904px) {
+  .artist_name .wrapper {
+    font-size: 4rem; } }
+
+@media only screen and (max-width: 728px) {
+  .artist_name .wrapper {
+    font-size: 3rem; } }
+
+.wrapper__buttontitle {
+  color: white;
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 2rem; }
+
+@media only screen and (max-width: 728px) {
+  .wrapper__buttontitle {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 2rem; } }
+
+.btn {
+  padding-left: 4rem;
+  margin: 2rem; }
 
 @keyframes pulse {
   0% {
@@ -431,7 +446,8 @@ body {
   height: 175px; }
 
 .cards__title {
-  font-weight: 100; }
+  font-weight: 100;
+  text-align: center; }
 
 .card {
   text-align: center;
@@ -440,6 +456,9 @@ body {
 .card-title {
   font-weight: 100;
   font-size: 2.2rem; }
+
+.card-text {
+  font-weight: 300; }
 
 .form-control {
   border: 1px solid #5ac948; }
@@ -463,7 +482,7 @@ header .header_logo_title {
   font-size: 1.4rem;
   display: flex;
   width: 100%;
-  height: 11rem;
+  height: 15rem;
   background: #219442;
   color: #fff; }
   .footer__wrapper {
@@ -526,12 +545,13 @@ header .header_logo_title {
   padding-top: 3rem; }
 
 .about {
-  background: #e4e1e4;
+  background: rgba(246, 242, 246, 0.198);
   color: #5ac948;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin: 2rem; }
   .about__text-title {
     font-weight: 100;
-    font-size: 8rem;
+    font-size: 5rem;
     color: #219442; }
 
 .card-title {
@@ -542,23 +562,28 @@ header .header_logo_title {
   font-size: 1.3rem;
   color: #219442; }
 
-.cards__title {
-  text-align: center;
-  font-size: 7rem;
-  color: #5ac948; }
+.cards {
+  margin: 3rem; }
+  .cards__title {
+    padding: 3rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #5ac948; }
 
 .gallery-title {
+  padding: 3rem;
   font-weight: 100;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #5ac948; }
 
 .contact {
   font-size: 1.5rem;
   color: #5ac948;
   padding-bottom: 10rem;
-  background: #e4e1e4;
-  font-weight: 100; }
+  font-weight: 100;
+  background: rgba(246, 242, 246, 0.198); }
   .contact__title {
+    padding: 2rem;
     font-weight: 100;
     font-size: 5rem; }
   .contact__text {
@@ -573,7 +598,11 @@ header .header_logo_title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem; }
+  height: 20rem; }
+
+#home-icons p {
+  font-size: 1.4rem;
+  font-weight: 100; }
 
 @media only screen and (max-width: 780px) {
   #home-icons {
@@ -582,3 +611,10 @@ header .header_logo_title {
 @media only screen and (max-width: 400px) {
   #home-icons {
     height: 57rem; } }
+
+.location_wrapper {
+  margin-top: 8rem; }
+
+.form-control:focus {
+  border-color: #ff80ff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5); }
