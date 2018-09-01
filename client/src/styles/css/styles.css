@@ -396,8 +396,8 @@ body {
   letter-spacing: 0.05em;
   text-shadow: 1px 1px 2px #141313;
   font-size: 7.0rem;
-  font-family: "Lobster";
-  font-weight: 300; }
+  font-family: 'Lobster Two', cursive;
+  font-weight: 100; }
 
 @media only screen and (max-width: 400px) {
   .artist_name {
