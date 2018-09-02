@@ -1,4 +1,6 @@
 import React from "react";
+import Zoom from 'react-reveal/Zoom';
+
 
 import cardpic1 from "../../images/servicecards/backyards2.jpg";
 import cardpic2 from "../../images/servicecards/fireplace.png";
@@ -9,6 +11,7 @@ import cardpic4 from "../../images/servicecards/pools.jpg";
 const Cards = () => {
   return (
     <div className="cards__wrapper container-fluid  ">
+    <Zoom>
       <div className="row">
         <div className="col-sm  ">
           <div className="">
@@ -73,6 +76,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
+      </Zoom>
     </div>
   );
 };
