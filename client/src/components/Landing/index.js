@@ -1,5 +1,5 @@
 import React from "react";
-
+import Modal from "../Modal";
 import { Element } from "react-scroll";
 import Featured from "../Featured";
 import About from "../About";
@@ -19,9 +19,11 @@ const LandingPage = () => {
       <Element name="about">
         <About />
       </Element>
+      <Modal />
       <Element name="services">
         <Services />
       </Element>
+
       <Element name="gallery">
         <Gallery />
       </Element>
