@@ -17,7 +17,7 @@ const Footer = () => {
           </li>
           <li className="footer__item">
            <i class="fab fa-houzz"></i>
-            <a href="https://www.houzz.es/pro/escapesoutdoorliving/escapes-outdoor-living?irs=US">
+            <a href="http://www.houzz.com/pro/escapesfl">
               Houzz
             </a>
           </li>
