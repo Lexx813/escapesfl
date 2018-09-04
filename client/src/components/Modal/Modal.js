@@ -3,10 +3,9 @@ import Youtube from "./index";
 
 const Modal = () => {
   return (
-    <div className="modal">
-      <h1>hello</h1>
+    <div>
+      <h2 className="youtube__title">Hello</h2>
       <Youtube />
-      <div />
     </div>
   );
 };

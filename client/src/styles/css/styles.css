@@ -632,14 +632,14 @@ header .header_logo_title {
   text-align: center;
   color: #5ac948;
   text-shadow: 1px 1px 2px #141313;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
-  align-items: center;
-  align-self: center; }
+  align-items: center; }
+  .youtube__title {
+    font-size: 6rem;
+    font-weight: 200; }
   .youtube__icon {
     cursor: pointer;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 6rem; }
+    font-size: 5rem; }
   .youtube__icon:hover {
     color: #219442; }

@@ -30,6 +30,7 @@ class Youtube extends React.Component {
       <div className="youtube">
         <div>
           <span onClick={this.openModal}>
+            <h2 className="youtube__title">Press Play!</h2>
             <i className="fas youtube__icon fa-play" />
           </span>
         </div>
@@ -37,7 +38,7 @@ class Youtube extends React.Component {
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
+          contentLabel="youtube Modal"
         >
           <span style={{ padding: "4px" }} onClick={this.closeModal}>
             <i className="fas fa-window-close" />
