@@ -40,7 +40,7 @@ class Youtube extends React.Component {
           style={customStyles}
           contentLabel="youtube Modal"
         >
-          <span style={{ padding: "4px" }} onClick={this.closeModal}>
+          <span onClick={this.closeModal}>
             <i className="fas fa-window-close" />
           </span>
 
