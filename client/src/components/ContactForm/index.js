@@ -1,101 +1,110 @@
-import React, { Component } from "react";
+import React from "react";
 import axios from "axios";
+import * as Yup from "yup";
+import { Formik, Form, Field } from "formik";
 
-class ContactForm extends Component {
-  state = {
-    name: "",
-    email: "",
-    alert: false
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const message = document.getElementById("message").value;
-    axios({
-      method: "POST",
-      url: "api/send",
-      data: {
-        name: name,
-        phone: phone,
-        email: email,
-        message: message
-      }
-    }).then(response => {
-      if (response.data.msg === "success") {
-        this.setState({ alert: "Message Sent" });
-        this.resetForm();
-      } else if (response.data.msg === "fail") {
-        this.setState({ alert: "Message failed" });
-      }
-    });
-  };
-
-  resetForm() {
-    document.getElementById("contact-form").reset();
-  }
-  render() {
-    const alert = this.state.alert;
-    return (
-      <div id="contact" className="contact  ">
-        <div className="container ">
-          <div className="row ">
-            <div className="col-lg-12 ">
-              <h3 className="contact__title">Get In Touch</h3>
-              <p className=" contact__text ">
-                Thank you so much for visiting our site, we love what we do and
-                we love our customers. We offer referral bonuses!
-              </p>
-              <div
-                className={
-                  alert === " Message Sent"
-                    ? "alert-warning text-center"
-                    : "alert-success text-center"
+const ContactForm = () => (
+  <div id="contact" className="contact  ">
+    <div className="container ">
+      <div className="row ">
+        <div className="col-lg-12 ">
+          <h3 className="contact__title">Get In Touch</h3>
+          <p className=" contact__text ">
+            Thank you so much for visiting our site, we love what we do and we
+            love our customers. We offer referral bonuses!
+          </p>
+          <Formik
+            initialValues={{
+              name: "",
+              phone: "",
+              email: "",
+              message: ""
+            }}
+            validationSchema={Schema}
+            onSubmit={(values, { resetForm, setStatus }) => {
+              const name = values.name;
+              const phone = values.phone;
+              const email = values.email;
+              const message = values.message;
+              axios({
+                method: "POST",
+                url: "api/send",
+                data: {
+                  name,
+                  phone,
+                  email,
+                  message
                 }
-              >
-                {alert}
-              </div>
-              <form
-                id="contact-form"
-                onSubmit={this.handleSubmit}
-                method="POST"
-              >
+              }).then(response => {
+                if (response.data.success === true) {
+                  resetForm();
+                  setStatus({ success: true });
+                } else if (response.data.success === false) {
+                  setStatus({ success: false });
+                }
+              });
+            }}
+            render={({ errors, touched, status }) => (
+              <Form>
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
-                  <input type="text" className="form-control" id="name" />
+                  <Field className="form-control" type="text" name="name" />
+                  {touched.name &&
+                    errors.name && (
+                      <p className="alert-warning wrn">{errors.name}</p>
+                    )}
                 </div>
                 <div className="form-group">
-                  <label htmlFor="exampleInputEmail1">Phone</label>
-                  <input
+                  <label htmlFor="name">Phone</label>
+                  <Field className="form-control" type="text" name="phone" />
+                  {touched.phone &&
+                    errors.phone && (
+                      <p className="alert-warning wrn">{errors.phone}</p>
+                    )}
+                </div>
+                <div className="form-group">
+                  <label htmlFor="name">Email</label>
+                  <Field className="form-control" type="email" name="email" />
+                  {touched.email &&
+                    errors.email && (
+                      <p className="alert-warning wrn">{errors.email}</p>
+                    )}
+                </div>
+                <label htmlFor="name">Message</label>
+                <div className="form-group">
+                  <Field
+                    className="form-control"
                     type="text"
-                    className="form-control"
-                    id="phone"
-                    aria-describedby="phoneHelp"
-                  />
-                  <label htmlFor="phone">Email address</label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    aria-describedby="emailHelp"
+                    name="message"
+                    component="textarea"
                   />
                 </div>
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea className="form-control" rows="5" id="message" />
-                </div>
-                <button type="submit" className="btn btn-lg btn-success ">
+                {touched.message &&
+                  errors.message && (
+                    <p className="alert-warning wrn">{errors.message}</p>
+                  )}
+                {status ? <h3 className="alert-success">Message sent</h3> : ""}
+                <button className="btn btn-outline-success" type="submit">
                   Submit
                 </button>
-              </form>
-            </div>
-          </div>
+              </Form>
+            )}
+          />
         </div>
       </div>
-    );
-  }
-}
-
+    </div>
+  </div>
+);
+const Schema = Yup.object().shape({
+  name: Yup.string()
+    .min(8, "Please enter your full name")
+    .required("Full Name is Required"),
+  phone: Yup.string("Please enter phone number").required("Phone is required"),
+  email: Yup.string()
+    .email("Email not valid")
+    .required("Email is required"),
+  message: Yup.string()
+    .min(15, " must be 15 characters or longer")
+    .required("A brief description is Required")
+});
 export default ContactForm;

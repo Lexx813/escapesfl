@@ -593,6 +593,12 @@ header .header_logo_title {
 .contact p {
   color: #219442; }
 
+.contact h3 {
+  font-weight: 300; }
+
+.wrn {
+  font-size: 1.1rem; }
+
 #home-icons {
   font-size: 1.6rem;
   display: flex;

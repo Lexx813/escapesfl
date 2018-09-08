@@ -64,11 +64,11 @@ app.post('/api/send', (req, res, next) => {
   transporter.sendMail(mail, (err, data) => {
     if (err) {
       res.json({
-        msg: 'fail'
+        success:false
       })
     } else {
       res.json({
-        msg: 'success'
+        success:true
       })
     }
   })
