@@ -43,7 +43,7 @@ const Cards = () => {
           <div className="">
             <img className="card-img-top img_size " src={cardpic3} alt="" />
             <div className="card-body">
-              <h4 className="card-title">Outdor Kitchen</h4>
+              <h4 className="card-title">Outdoor Kitchen</h4>
               <p className="card-text">
                 Customizing the details of your outdoor kitchen to your specific
                 needs; we work to capture your vision and translate it into your
@@ -56,7 +56,7 @@ const Cards = () => {
           <div className=" ">
             <img className="card-img-top img_size " src={cardpic4} alt="" />
             <div className="card-body">
-              <h4 className="card-title">Pool area</h4>
+              <h4 className="card-title">Pool Area</h4>
               <p className="card-text">
                 Customize, design and pave your pool area to be an Escape you
                 deserve, Just imagine paradise in you backyard.
