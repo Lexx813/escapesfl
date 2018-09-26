@@ -19,6 +19,12 @@ const Footer = () => {
             <i className="fab fa-houzz" />
             <a href="http://www.houzz.com/pro/escapesfl">Houzz</a>
           </li>
+          <li className="footer__item">
+         < a href = "http://www.homeadvisor.com/rated.EscapesOutdoorLiving.78696798.html"
+         style = "display: block; margin: 0 auto;" > < img alt = "Screened Contractor on HomeAdvisor"
+         style = "display:block;"
+         src = "http://www.homeadvisor.com/images/sp-badges/soap-solid-border.png?sp=78696798&key=ddfb515a645a0c16f4d202e119332d44" / > </a>
+          </li>
         </ul>
         <ul>
           <li className="footer__item">
