@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { Formik, Form, Field } from "formik";
 
 const ContactForm = () => (
-  <section className="section-contact">
+  <section id="contact" className="section-contact">
     <div className="row">
       <div className="contact">
         <div className="contact__form">
