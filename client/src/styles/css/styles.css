@@ -439,67 +439,11 @@ body {
   color: #55c57a;
   text-shadow: 1px 1px 2px #141313; }
 
-.home-heading-title {
-  font-size: 5rem; }
-
-.about-c {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 3rem; }
-
-.about {
-  background: rgba(246, 242, 246, 0.198);
-  color: #55c57a;
-  font-size: 1.5rem;
-  margin: 2rem; }
-  .about__text-title {
-    font-weight: 100;
-    font-size: 5rem;
-    color: #55c57a; }
-
-.card-title {
-  font-size: 2.5rem;
-  color: #55c57a; }
-
-.card-text {
-  font-size: 1.3rem;
-  color: #7ed56f; }
-
-.cards {
-  margin: 3rem; }
-  .cards__title {
-    padding: 3rem;
-    text-align: center;
-    font-size: 5rem;
-    color: #55c57a; }
-
 .gallery-title {
   padding: 3rem;
   font-weight: 100;
   font-size: 5rem;
   color: #55c57a; }
-
-.contact {
-  font-size: 1.5rem;
-  color: #55c57a;
-  padding-bottom: 10rem;
-  font-weight: 100;
-  background: rgba(246, 242, 246, 0.198); }
-  .contact__title {
-    padding: 2rem;
-    font-weight: 100;
-    font-size: 5rem; }
-  .contact__text {
-    font-weight: 100;
-    font-size: 1.4rem; }
-
-.contact p {
-  color: #55c57a; }
-
-.contact h3 {
-  font-weight: 300; }
 
 .wrn {
   font-size: 1.1rem; }
@@ -525,10 +469,6 @@ body {
 
 .location_wrapper {
   margin-top: 8rem; }
-
-.form-control:focus {
-  border-color: #ff80ff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5); }
 
 .youtube {
   display: flex;
@@ -710,8 +650,11 @@ body {
   margin: 2rem; }
 
 .card {
+  transition: all .3s;
   position: relative;
   height: 52rem; }
+  .card:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
   .card__side {
     height: 40rem;
     position: absolute;
@@ -737,15 +680,15 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../images/servicecards/backyards.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(126, 213, 111, 0.2)), url(../../images/servicecards/backyards.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #b73535, #be3737), url(../../images/servicecards/fireplace.png); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.8), rgba(190, 55, 55, 0.2)), url(../../images/servicecards/fireplace.png); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../images/servicecards/Kitchens.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.2), rgba(255, 119, 48, 0.8)), url(../../images/servicecards/Kitchens.jpg); }
     .card__picture--4 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../images/servicecards/pools.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.2), rgba(86, 67, 250, 0.8)), url(../../images/servicecards/pools.jpg); }
     .card__picture--5 {
-      background-image: linear-gradient(to right bottom, #f6f3a7, #2998ff), url(../../images/servicecards/pergola.png); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.2), rgba(41, 152, 255, 0.8)), url(../../images/servicecards/pergola.png); }
   .card__heading {
     font-size: 2.0rem;
     font-weight: 300;
@@ -764,13 +707,13 @@ body {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.85), rgba(40, 180, 133, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(183, 53, 53, 0.85), rgba(190, 55, 55, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.85), rgba(190, 55, 55, 0.85)); }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--4 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.85), rgba(86, 67, 250, 0.85)); }
     .card__heading-span--5 {
       background-image: linear-gradient(to right bottom, rgba(246, 243, 167, 0.85), rgba(41, 152, 255, 0.85)); }
   .card__details {
@@ -783,23 +726,6 @@ body {
     @media only screen and (max-width: 56.25em) {
       .card__details {
         width: 100%; } }
-  .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center; }
-  .card__price-box {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -816,18 +742,7 @@ body {
       .card:hover .card__side--front {
         transform: rotateY(0); }
       .card__details {
-        padding: 1rem 3rem; }
-      .card__cta {
-        position: relative;
-        top: 0%;
-        left: 0;
-        transform: translate(0);
-        width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 4rem; } }
+        padding: 1rem 3rem; } }
 
 .composition {
   position: relative; }
@@ -869,7 +784,6 @@ body {
           left: 0;
           transform: scale(1.1); } }
     .composition__photo:hover {
-      outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -979,7 +893,7 @@ body {
   font-size: 1.5rem;
   font-family: inherit;
   color: inherit;
-  padding: 1.5rem 2rem;
+  padding: .8rem 1rem;
   border-radius: 2px;
   background-color: rbga(#fff, 0.5);
   border: none;
@@ -1146,6 +1060,8 @@ header .header_logo_title {
   @media only screen and (max-width: 56.25em) {
     .contact {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../../images/gallery/gallery_1.jpg); } }
+  .contact__text {
+    font-size: 1.4rem; }
   .contact__form {
     width: 50%;
     padding: 6rem; }

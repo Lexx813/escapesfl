@@ -62,10 +62,17 @@ const Footer = () => {
           <ul className="footer__contact_info">
             <li className="footer__item">
               <i className="far fa-envelope"> </i>
-              <p> Office @escapesfl.com </p>
+              &nbsp;
+              <a className="footer__link" href="mailto:office@escapesfl.com">
+                Office@escapesfl.com
+              </a>
             </li>
             <li className="footer__item">
-              <i className="fas fa-phone-square"> </i> <p> 813-613-3559 </p>
+              <i className="fas fa-phone-square"> </i>
+              &nbsp;
+              <a href="tel:813-613-3559" className="footer__link">
+                813-613-3559
+              </a>
             </li>
           </ul>
         </div>

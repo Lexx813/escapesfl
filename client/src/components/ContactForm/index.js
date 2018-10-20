@@ -4,15 +4,15 @@ import * as Yup from "yup";
 import { Formik, Form, Field } from "formik";
 
 const ContactForm = () => (
-  <section className="section-contact  ">
+  <section className="section-contact">
     <div className="row">
-      <div className="contact ">
+      <div className="contact">
         <div className="contact__form">
           <div className=" u-margin-bottom-medium">
             <h2 className="heading-secondary"> Get in touch </h2>
             <p className=" contact__text ">
               Thank you so much for visiting our site, we love what we do and we
-              love our customers.We offer referral bonuses!
+              love our customers. We offer referral bonuses!
             </p>
           </div>
 

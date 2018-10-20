@@ -1,4 +1,9 @@
 .card {
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
 
     // FUNCTIONALITY
 
@@ -43,28 +48,28 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-light, .2)),
                 url(../../images/servicecards/backyards.jpg);
 
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark),
+            background-image: linear-gradient(to right bottom, rgba($color-yellow-light, .8), rgba($color-red-dark, .2)),
                 url(../../images/servicecards/fireplace.png);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+            background-image: linear-gradient(to right bottom, rgba($color-yellow-light, .2), rgba($color-secondary-dark, .8)),
                 url(../../images/servicecards/Kitchens.jpg);
         }
 
         &--4 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+            background-image: linear-gradient(to right bottom, rgba($color-yellow-light, .2), rgba($color-tertiary-dark, .8)),
                 url(../../images/servicecards/pools.jpg);
         }
 
         &--5 {
-            background-image: linear-gradient(to right bottom, $color-yellow-light, $color-yellow-dark),
+            background-image: linear-gradient(to right bottom, rgba($color-yellow-light, .2), rgba($color-yellow-dark, .8)),
                 url(../../images/servicecards/pergola.png);
         }
     }
@@ -93,25 +98,25 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom,
-                rgba($color-secondary-light, .85),
-                rgba($color-secondary-dark, .85));
+                rgba($color-yellow-light, .85),
+                rgba($color-primary-dark, .85));
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom,
-                rgba($color-red-light, .85),
+                rgba($color-yellow-light, .85),
                 rgba($color-red-dark, .85));
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom,
-                rgba($color-primary-light, .85),
-                rgba($color-primary-dark, .85));
+                rgba($color-yellow-light, .85),
+                rgba($color-secondary-dark, .85));
         }
 
         &--4 {
             background-image: linear-gradient(to right bottom,
-                rgba($color-tertiary-light, .85),
+                rgba($color-yellow-light, .85),
                 rgba($color-tertiary-dark, .85));
         }
 
@@ -139,31 +144,7 @@
 
     }
 
-    // FRONT SIDE STYLING
-    &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        text-align: center;
-    }
 
-    &__price-box {
-        text-align: center;
-        color: $color-white;
-        margin-bottom: 8rem;
-    }
-
-    &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
-
-    &__price-value {
-        font-size: 6rem;
-        font-weight: 100;
-    }
 
 
 
@@ -198,23 +179,7 @@
             padding: 1rem 3rem;
         }
 
-        // FRONT SIDE STYLING
-        &__cta {
-            position: relative;
-            top: 0%;
-            left: 0;
-            transform: translate(0);
-            width: 100%;
-            padding: 7rem 4rem 4rem 4rem;
-        }
 
-        &__price-box {
-            margin-bottom: 3rem;
-        }
-
-        &__price-value {
-            font-size: 4rem;
-        }
     }
 
 }

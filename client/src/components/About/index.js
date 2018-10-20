@@ -7,8 +7,8 @@ import p3 from "../../images/gallery/gallery_6.jpg";
 const About = () => {
   return (
     <div className="section-about u-margin-bottom-big">
-      <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">About Us</h2>
+      <div className="u-center-text u-margin-bottom-big ">
+        <h2 className="heading-secondary u-margin-top-big"> About Us </h2>
       </div>
       <div className="row">
         <div className="col-1-of-2">

@@ -21,6 +21,7 @@
 }
 
 .contact {
+
     background-image: linear-gradient(105deg,
         rgba($color-white, .9) 0%,
         rgba($color-white, .9) 50%,
@@ -29,6 +30,7 @@
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
 
     @include respond(tab-land) {
         background-image: linear-gradient(105deg,
@@ -44,6 +46,10 @@
             rgba($color-white, .9) 0%,
             rgba($color-white, .9) 100%),
             url(../../images/gallery/gallery_1.jpg);
+    }
+
+    &__text {
+        font-size: 1.4rem;
     }
 
     &__form {

@@ -59,51 +59,12 @@ body {
 	text-shadow: 1px 1px 2px rgb(20, 19, 19);
 }
 
-.home-heading-title {
-	font-size: 5rem;
-}
 
-.about-c {
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: space-around;
-	padding-top: 3rem;
-}
 
-.about {
-	background: rgba(246, 242, 246, 0.198);
-	color: $color-primary;
-	font-size: 1.5rem;
-	margin: 2rem;
 
-	&__text-title {
-		font-weight: 100;
-		font-size: 5rem;
-		color: $color-primary;
-	}
-}
 
-.card-title {
-	font-size: 2.5rem;
-	color: $color-primary;
-}
 
-.card-text {
-	font-size: 1.3rem;
-	color: $color-primary-light;
-}
 
-.cards {
-	margin: 3rem;
-
-	&__title {
-		padding: 3rem;
-		text-align: center;
-		font-size: 5rem;
-		color: $color-primary;
-	}
-}
 
 .gallery-title {
 	padding: 3rem;
@@ -112,32 +73,11 @@ body {
 	color: $color-primary;
 }
 
-.contact {
-	font-size: 1.5rem;
-	color: $color-primary;
-	padding-bottom: 10rem;
-	font-weight: 100;
-	background: rgba(246, 242, 246, 0.198);
 
-	&__title {
-		padding: 2rem;
-		font-weight: 100;
-		font-size: 5rem;
-	}
 
-	&__text {
-		font-weight: 100;
-		font-size: 1.4rem;
-	}
-}
 
-.contact p {
-	color: $color-primary;
-}
 
-.contact h3 {
-	font-weight: 300;
-}
+
 
 .wrn {
 	font-size: 1.1rem;
@@ -172,10 +112,7 @@ body {
 	margin-top: 8rem;
 }
 
-.form-control:focus {
-	border-color: #ff80ff;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
-}
+
 
 //--- Modal ---//
 .youtube {
