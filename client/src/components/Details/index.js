@@ -3,10 +3,12 @@ import Cards from "./Cards";
 
 const Services = () => {
   return (
-    <div className="cards">
-      <h1 className="cards__title">Services</h1>
+    <React.Fragment>
+      <div className="u-center-text u-margin-bottom-big">
+        <h2 className="heading-secondary"> Services </h2>
+      </div>
       <Cards />
-    </div>
+    </React.Fragment>
   );
 };
 

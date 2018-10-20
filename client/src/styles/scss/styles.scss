@@ -1,172 +1,24 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 // BASE
-@import "./base/base.scss";
+@import "./abstracts/functions";
+@import "./abstracts/mxins";
+@import "./abstracts/variables";
+
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
 // COMPONENTS
 @import "./components/carrousel.scss";
-@import "./components/cards.scss";
+@import "./components/card.scss";
+@import "./components/composition";
+@import "./components/feature-box";
+@import "./components/button";
+@import "./components/form";
 // layout
+@import "./layout/grid";
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 
-#home-heading {
-    font-size: 2rem;
-    position: relative;
-    min-height: 250px;
-    width: auto;
-    background: url("../../images/paralax/paralax.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: $primary-color;
-    text-shadow: 1px 1px 2px rgb(20, 19, 19);
-}
-
-.home-heading-title {
-    font-size: 5rem;
-}
-
-.about-c {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 3rem;
-}
-
-.about {
-    background: rgba(246, 242, 246, 0.198);
-    color: $primary-color;
-    font-size: 1.5rem;
-    margin: 2rem;
-
-    &__text-title {
-        font-weight: 100;
-        font-size: 5rem;
-        color: $primary-color-light;
-    }
-}
-
-.card-title {
-    font-size: 2.5rem;
-    color: $primary-color;
-}
-
-.card-text {
-    font-size: 1.3rem;
-    color: $primary-color-light;
-}
-
-.cards {
-    margin: 3rem;
-
-    &__title {
-        padding: 3rem;
-        text-align: center;
-        font-size: 5rem;
-        color: $primary-color;
-    }
-}
-
-.gallery-title {
-    padding: 3rem;
-    font-weight: 100;
-    font-size: 5rem;
-    color: $primary-color;
-}
-
-.contact {
-    font-size: 1.5rem;
-    color: $primary-color;
-    padding-bottom: 10rem;
-    font-weight: 100;
-    background: rgba(246, 242, 246, 0.198);
-
-    &__title {
-        padding: 2rem;
-        font-weight: 100;
-        font-size: 5rem;
-    }
-
-    &__text {
-        font-weight: 100;
-        font-size: 1.4rem;
-    }
-}
-
-.contact p {
-    color: $primary-color-light;
-}
-.contact h3{
-    font-weight: 300;
-}
-.wrn{
-    font-size: 1.1rem;
-}
-
-#home-icons {
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20rem;
-}
-
-#home-icons p {
-    font-size: 1.4rem;
-    font-weight: 100;
-}
-
-@media only screen and (max-width: 780px) {
-    #home-icons {
-        height: 45rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #home-icons {
-        height: 57rem;
-    }
-}
-
-.location_wrapper {
-    margin-top: 8rem;
-}
-
-.form-control:focus {
-    border-color: #ff80ff;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
-}
-
-//--- Modal ---//
-.youtube {
-    display: flex;
-    font-size: 2rem;
-    position: relative;
-    min-height: 250px;
-    width: auto;
-    background: url("../../images/paralax/paralax2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: $primary-color;
-    text-shadow: 1px 1px 2px rgb(20, 19, 19);
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-
-    &__title {
-        font-size: 6rem;
-        font-weight: 200;
-    }
-
-    &__icon {
-        cursor: pointer;
-        font-size: 5rem;
-    }
-
-    &__icon:hover {
-        color: $primary-color-light;
-    }
-}
+// Pages
+@import "./pages/_home";

@@ -19,7 +19,7 @@
 .artist_name .wrapper {
     margin: 6px;
     text-align: center;
-    color: $primary-color;
+    color: $color-primary;
     animation: pulse 3s 2s infinite;
     position: relative;
     z-index: 10;
@@ -80,16 +80,3 @@
     margin: 2rem;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
-
-    15% {
-        transform: scale3d(1.05, 1.05, 1.05);
-    }
-
-    100% {
-        transform: scale3d(1, 1, 1);
-    }
-}

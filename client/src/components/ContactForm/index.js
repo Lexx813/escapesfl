@@ -4,15 +4,18 @@ import * as Yup from "yup";
 import { Formik, Form, Field } from "formik";
 
 const ContactForm = () => (
-  <div id="contact" className="contact  ">
-    <div className="container ">
-      <div className="row ">
-        <div className="col-lg-12 ">
-          <h3 className="contact__title">Get In Touch</h3>
-          <p className=" contact__text ">
-            Thank you so much for visiting our site, we love what we do and we
-            love our customers. We offer referral bonuses!
-          </p>
+  <section className="section-contact  ">
+    <div className="row">
+      <div className="contact ">
+        <div className="contact__form">
+          <div className=" u-margin-bottom-medium">
+            <h2 className="heading-secondary"> Get in touch </h2>
+            <p className=" contact__text ">
+              Thank you so much for visiting our site, we love what we do and we
+              love our customers.We offer referral bonuses!
+            </p>
+          </div>
+
           <Formik
             initialValues={{
               name: "",
@@ -45,46 +48,76 @@ const ContactForm = () => (
               });
             }}
             render={({ errors, touched, status }) => (
-              <Form>
+              <Form className="form">
                 <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <Field className="form-control" type="text" name="name" />
                   {touched.name &&
                     errors.name && (
-                      <p className="alert-warning wrn">{errors.name}</p>
+                      <p className="alert-warning wrn"> {errors.name} </p>
                     )}
+                  <Field
+                    className="form__input"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                  <label htmlFor="name" className="form__label">
+                    Name
+                  </label>
                 </div>
-                <div className="form-group">
-                  <label htmlFor="name">Phone</label>
-                  <Field className="form-control" type="text" name="phone" />
+                <div className="form__group">
                   {touched.phone &&
                     errors.phone && (
-                      <p className="alert-warning wrn">{errors.phone}</p>
+                      <p className="alert-warning wrn"> {errors.phone} </p>
                     )}
+                  <Field
+                    className="form__input"
+                    type="text"
+                    name="phone"
+                    placeholder="Phone Number"
+                  />
+                  <label htmlFor="name" className="form__label">
+                    Phone Number
+                  </label>
                 </div>
-                <div className="form-group">
-                  <label htmlFor="name">Email</label>
-                  <Field className="form-control" type="email" name="email" />
+                <div className="form__group">
                   {touched.email &&
                     errors.email && (
-                      <p className="alert-warning wrn">{errors.email}</p>
+                      <p className="alert-warning wrn"> {errors.email} </p>
                     )}
-                </div>
-                <label htmlFor="name">Message</label>
-                <div className="form-group">
                   <Field
-                    className="form-control"
+                    className="form__input"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                  <label htmlFor="email" className="form__label">
+                    Email
+                  </label>
+                </div>
+
+                <div className="form__group">
+                  {touched.message &&
+                    errors.message && (
+                      <p className="alert-warning wrn"> {errors.message} </p>
+                    )}
+                  {status ? (
+                    <h3 className="alert-success"> Message sent </h3>
+                  ) : (
+                    ""
+                  )}
+                  <Field
+                    className="form__input"
                     type="text"
                     name="message"
                     component="textarea"
+                    placeholder="Message"
                   />
+                  <label htmlFor="message" className="form__label">
+                    Message
+                  </label>
                 </div>
-                {touched.message &&
-                  errors.message && (
-                    <p className="alert-warning wrn">{errors.message}</p>
-                  )}
-                {status ? <h3 className="alert-success">Message sent</h3> : ""}
-                <button className="btn btn-outline-success" type="submit">
+
+                <button className="btn btn--green" type="submit">
                   Submit
                 </button>
               </Form>
@@ -93,7 +126,7 @@ const ContactForm = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 const Schema = Yup.object().shape({
   name: Yup.string()

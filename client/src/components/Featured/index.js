@@ -6,9 +6,16 @@ const Featured = () => {
     <div style={{ position: "relative" }}>
       <Carrousel />
       <div className="artist_name">
-        <div className="wrapper ">Escape The Ordinary</div>
-                 <h3 className="wrapper__buttontitle">Start Your Escape!</h3>
-                 <a className="btn btn-success btn-lg" href="#contact">Start Here!</a>
+        <div className="wrapper  heading-primary heading-primary--main">
+          Escape The Ordinary
+        </div>
+        <h3 className="heading-primary heading-primary--sub">
+          {" "}
+          Start Your Escape!{" "}
+        </h3>
+        <a className="btn btn--green" href="#contact">
+          Start Here!
+        </a>
       </div>
     </div>
   );
