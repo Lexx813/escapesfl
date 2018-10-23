@@ -7,7 +7,9 @@ const Gallery = () => {
       <h3 className=" heading-secondary  u-margin-bottom-medium u-margin-top-big ">
         Image Gallery
       </h3>
-      <GallerySlider />
+      <div className="gallery">
+        <GallerySlider />
+      </div>
     </div>
   );
 };

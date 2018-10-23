@@ -439,12 +439,6 @@ body {
   color: #55c57a;
   text-shadow: 1px 1px 2px #141313; }
 
-.gallery-title {
-  padding: 3rem;
-  font-weight: 100;
-  font-size: 5rem;
-  color: #55c57a; }
-
 .wrn {
   font-size: 1.1rem; }
 
@@ -469,31 +463,6 @@ body {
 
 .location_wrapper {
   margin-top: 8rem; }
-
-.youtube {
-  display: flex;
-  font-size: 2rem;
-  position: relative;
-  min-height: 250px;
-  width: auto;
-  background: url("../../images/paralax/paralax2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: #55c57a;
-  text-shadow: 1px 1px 2px #141313;
-  justify-content: center;
-  align-content: center;
-  align-items: center; }
-  .youtube__title {
-    font-size: 6rem;
-    font-weight: 200; }
-  .youtube__icon {
-    cursor: pointer;
-    font-size: 5rem; }
-  .youtube__icon:hover {
-    color: #7ed56f; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -923,6 +892,37 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.youtube {
+  display: flex;
+  font-size: 2rem;
+  position: relative;
+  min-height: 250px;
+  width: auto;
+  background: url("../../images/paralax/paralax2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #55c57a;
+  text-shadow: 1px 1px 2px #141313;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .youtube__title {
+    font-size: 6rem;
+    font-weight: 200; }
+  .youtube__icon {
+    cursor: pointer;
+    font-size: 5rem; }
+  .youtube__icon:hover {
+    color: #7ed56f; }
+
+.gallery-title {
+  padding: 3rem;
+  font-weight: 100;
+  font-size: 5rem;
+  color: #55c57a; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -1042,6 +1042,7 @@ header .header_logo_title {
   background-color: #f7f7f7; }
 
 .section-contact {
+  margin-top: -1rem;
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
   @media only screen and (max-width: 56.25em) {

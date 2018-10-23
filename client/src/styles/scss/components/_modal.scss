@@ -1,0 +1,32 @@
+//--- Modal ---//
+.youtube {
+    display: flex;
+    font-size: 2rem;
+    position: relative;
+    min-height: 250px;
+    width: auto;
+    background: url("../../images/paralax/paralax2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: $color-primary;
+    text-shadow: 1px 1px 2px rgb(20, 19, 19);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 200;
+    }
+
+    &__icon {
+        cursor: pointer;
+        font-size: 5rem;
+    }
+
+    &__icon:hover {
+        color: $color-primary-light;
+    }
+}
