@@ -100,7 +100,6 @@ class GallerySlider extends Component {
         original: `${pic14}`,
         thumbnail: `${pic14sm}`
       }
-
     ];
 
     return <ImageGallery items={images} />;
