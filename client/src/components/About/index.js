@@ -1,8 +1,8 @@
 import React from "react";
 
-import p1 from "../../images/gallery/gallery_1.jpg";
-import p2 from "../../images/gallery/gallery_4.jpg";
-import p3 from "../../images/gallery/gallery_6.jpg";
+import p1 from "../../images/composition/composition.jpg";
+import p2 from "../../images/composition/composition2.jpg";
+import p3 from "../../images/composition/composition3.jpg";
 
 const About = () => {
   return (

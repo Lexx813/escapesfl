@@ -44,14 +44,17 @@ class Header extends Component {
         style={{
           backgroundColor: this.state.headerShow ? "#fff" : "transparent",
           boxShadow: this.state.headerShow ? "" : "none",
-          height:"135px",
+          height: this.state.headerShow ? "70px" : "150px",
           padding: "2px 0px"
         }}
       >
         <Toolbar>
           <div className="header_logo">
-             <img style={{width:"350px", height:"auto"}} src={Logo} alt="logo"/>
-
+            <img
+              style={{ width: this.state.headerShow ? "150px" : "300px" }}
+              src={Logo}
+              alt="logo"
+            />
           </div>
 
           <IconButton aria-label="Menu" onClick={() => this.toggleDrawer(true)}>
