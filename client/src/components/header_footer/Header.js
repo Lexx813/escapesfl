@@ -11,25 +11,12 @@ import Logo from "../../images/logo/logo.png";
 
 class Header extends Component {
   state = {
-    drawerOpen: false,
-    headerShow: false
+    drawerOpen: false
   };
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
 
-  handleScroll = () => {
-    if (window.scrollY > 0) {
-      this.setState({
-        headerShow: true
-      });
-    } else {
-      this.setState({
-        headerShow: false
-      });
-    }
-  };
+
+
 
   toggleDrawer = value => {
     this.setState({
@@ -42,16 +29,15 @@ class Header extends Component {
       <AppBar
         position="fixed"
         style={{
-          backgroundColor: this.state.headerShow ? "#fff" : "transparent",
-          boxShadow: this.state.headerShow ? "" : "none",
-          height: this.state.headerShow ? "70px" : "150px",
+          backgroundColor: "#fff",
+          height: "70px",
           padding: "2px 0px"
         }}
       >
         <Toolbar>
           <div className="header_logo">
             <img
-              style={{ width: this.state.headerShow ? "150px" : "300px" }}
+              style={{ width: "150px" }}
               src={Logo}
               alt="logo"
             />

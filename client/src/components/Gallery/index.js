@@ -4,7 +4,7 @@ import GallerySlider from "./galleryslider";
 const Gallery = () => {
   return (
     <div className="u-center-text ">
-      <h3 className=" heading-secondary  u-margin-bottom-medium u-margin-top-big ">
+      <h3 className=" heading-secondary  u-margin-bottom-medium ">
         Image Gallery
       </h3>
       <div className="gallery">
