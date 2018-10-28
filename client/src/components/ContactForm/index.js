@@ -52,7 +52,7 @@ const ContactForm = () => (
                 <div className="form-group">
                   {touched.name &&
                     errors.name && (
-                      <p className="alert-warning wrn"> {errors.name} </p>
+                       <p className="warning"> {errors.name} </p>
                     )}
                   <Field
                     className="form__input"
@@ -67,7 +67,7 @@ const ContactForm = () => (
                 <div className="form__group">
                   {touched.phone &&
                     errors.phone && (
-                      <p className="alert-warning wrn"> {errors.phone} </p>
+                      <p className="warning "> {errors.phone} </p>
                     )}
                   <Field
                     className="form__input"
@@ -82,7 +82,7 @@ const ContactForm = () => (
                 <div className="form__group">
                   {touched.email &&
                     errors.email && (
-                      <p className="alert-warning wrn"> {errors.email} </p>
+                      <p className=" warning"> {errors.email} </p>
                     )}
                   <Field
                     className="form__input"
@@ -98,10 +98,10 @@ const ContactForm = () => (
                 <div className="form__group">
                   {touched.message &&
                     errors.message && (
-                      <p className="alert-warning wrn"> {errors.message} </p>
+                      <p className=" warning"> {errors.message} </p>
                     )}
                   {status ? (
-                    <h3 className="alert-success"> Message sent </h3>
+                    <h3 className="msg-success"> Message sent </h3>
                   ) : (
                     ""
                   )}
