@@ -51,9 +51,7 @@ const ContactForm = () => (
               <Form className="form">
                 <div className="form-group">
                   {touched.name &&
-                    errors.name && (
-                       <p className="warning"> {errors.name} </p>
-                    )}
+                    errors.name && <p className="warning"> {errors.name} </p>}
                   <Field
                     className="form__input"
                     type="text"
@@ -100,11 +98,6 @@ const ContactForm = () => (
                     errors.message && (
                       <p className=" warning"> {errors.message} </p>
                     )}
-                  {status ? (
-                    <h3 className="msg-success"> Message sent </h3>
-                  ) : (
-                    ""
-                  )}
                   <Field
                     className="form__input"
                     type="text"
@@ -116,7 +109,7 @@ const ContactForm = () => (
                     Message
                   </label>
                 </div>
-
+                {status ? <h3 className="msg-success"> Message sent </h3> : ""}
                 <button className="btn btn--green" type="submit">
                   Submit
                 </button>
