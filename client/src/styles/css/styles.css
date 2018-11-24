@@ -943,6 +943,23 @@ body {
   width: 100%;
   height: 400px; }
 
+.image-gallery-left-nav {
+  left: 0; }
+
+.image-gallery-fullscreen-button:before,
+.image-gallery-left-nav:before,
+.image-gallery-play-button:before,
+.image-gallery-right-nav:before {
+  color: #55c57a;
+  line-height: 0.7;
+  text-shadow: 0 2px 2px #1a1a1a;
+  -webkit-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out; }
+
+.image-gallery-thumbnail.active {
+  border: 4px solid #55c57a; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
